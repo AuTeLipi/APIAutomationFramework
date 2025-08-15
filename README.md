@@ -123,7 +123,7 @@ mvn clean test -DsuiteXmlFile=testng-integration.xml
 ```
 allure serve allure-results/
 ```
-![img_5.png](img_5.png)
+![img_5.png](images/img_5.png)
 ---
 ## 📖 Allure Setup Guide
 
