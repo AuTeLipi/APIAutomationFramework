@@ -142,7 +142,7 @@ brew install allure
 ```
 ---
 ### 2️⃣ Add Dependency in pom.xml
-```
+```xml
 <dependency>
     <groupId>io.qameta.allure</groupId>
     <artifactId>allure-testng</artifactId>
