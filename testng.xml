@@ -1,0 +1,8 @@
+<suite name="All Test Suite">
+    <test name=".../TestCreateBooking.java">
+        <classes>
+            <class name="com.LipiAutomation.tests.restfulbooker.crud.TestCreateBooking">
+            </class>
+        </classes>
+    </test>
+</suite>
