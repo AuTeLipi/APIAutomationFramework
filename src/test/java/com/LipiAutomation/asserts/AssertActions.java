@@ -10,6 +10,7 @@ public class AssertActions {
     public void verifyResponseBody(String actual, String expected, String description){
         assertEquals(actual,expected,description);
     }
+
     public void verifyResponseBody(int actual, int expected, String description) {
         assertEquals(actual, expected, description);
     }
@@ -17,8 +18,6 @@ public class AssertActions {
     public void verifyStatusCode(Response response, int expected) {
         assertEquals(response.getStatusCode(),expected);
     }
-
-
 
     public void verifyStringKey(String keyExpect,String keyActual){
         // AssertJ
@@ -32,19 +31,23 @@ public class AssertActions {
         // AssertJ
         assertThat(keyExpect).isNotNull();
     }
+
     public void verifyStringKeyNotNull(String keyExpect){
         // AssertJ
         assertThat(keyExpect).isNotNull();
     }
+
     public void verifyIntKey(int keyActual, int keyExpect, String description) {
         assertEquals(keyActual, keyExpect, description);
     }
 
     public void verifyBooleanKey(boolean keyActual, boolean keyExpect) {
+
         assertEquals(keyActual, keyExpect);
     }
 
     public void verifyTrue(boolean keyExpect){
+
         assertTrue(keyExpect);
     }
 
@@ -74,7 +77,6 @@ public class AssertActions {
 
         verifyStringKey(booking.getAdditionalneeds(), expectedAdditionalneeds);
     }
-
 
     public void verifyKeyIsMissing(Response response, String key) {
         try {

@@ -1,5 +1,8 @@
-package com.LipiAutomation.modules;
+package com.LipiAutomation.modules.RestfulBooker;
 
+import com.LipiAutomation.pojos.requestPOJO.restfulbooker.Auth;
+import com.LipiAutomation.pojos.responsePOJO.restfulbooker.InvalidTokenResponse;
+import com.LipiAutomation.pojos.responsePOJO.restfulbooker.TokenResponse;
 import com.github.javafaker.Faker;
 import com.google.gson.Gson;
 import com.LipiAutomation.pojos.requestPOJO.restfulbooker.Booking;
@@ -191,5 +194,46 @@ public class PayloadManager {
         gson = new Gson();
         BookingResponse bookingResponse = gson.fromJson(responseString, BookingResponse.class);
         return bookingResponse;
+    }
+
+    public Booking getResponseFromJSON(String responseString) {
+        gson = new Gson();
+        Booking bookingResponse = gson.fromJson(responseString, Booking.class);
+        return bookingResponse;
+    }
+
+    // Serialization or deserialization of an object is not present.
+    // So we need to create.
+
+    // We convert the JSON string to the Java object for auth.
+    // {
+    //    "username" : "admin",
+    //    "password" : "password123"
+    //}
+
+    public String setAuthPayload(){
+        Auth auth = new Auth();
+        auth.setUsername("admin");
+        auth.setPassword("password123");
+        gson = new Gson();
+        String jsonPayloadString = gson.toJson(auth);
+        System.out.println("Payload set to the -> " + jsonPayloadString);
+        return jsonPayloadString;
+
+    }
+
+    // DeSer ( JSON String -> Java Object
+    public String getTokenFromJSON(String tokenResponse){
+        gson = new Gson();
+        TokenResponse tokenResponse1 = gson.fromJson(tokenResponse, TokenResponse.class);
+        return tokenResponse1.getToken();
+    }
+
+
+    // DeSer ( JSON String -> Java Object
+    public String getInvalidResponse(String invalidTokenResponse){
+        gson = new Gson();
+        InvalidTokenResponse tokenResponse1 = gson.fromJson(invalidTokenResponse, InvalidTokenResponse.class);
+        return  tokenResponse1.getReason();
     }
 }

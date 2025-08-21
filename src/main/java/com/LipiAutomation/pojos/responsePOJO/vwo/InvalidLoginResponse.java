@@ -4,7 +4,7 @@ import com.google.gson.annotations.SerializedName;
 
 @SuppressWarnings("unused")
 
-public class InvalidloginResponse {
+public class InvalidLoginResponse {
     @SerializedName("message")
     private String mMessage;
 
@@ -15,4 +15,5 @@ public class InvalidloginResponse {
     public void setMessage(String message) {
         mMessage = message;
     }
+
 }
