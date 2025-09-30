@@ -76,9 +76,7 @@ mvn test -Dsurefire.suiteXmlFiles=testng.xml
 - Jenkinsfile for pipeline automation  
 
 ```
----
-## ⚙ Running via CI/CD
-![img_2.png](images/img_2.png)
+
 ---
 ## 📝 Basic Create Test
 
