@@ -15,7 +15,7 @@ mvn test -Dsurefire.suiteXmlFiles=testng.xml
 ---
 
 ## 📸 Screenshots
-<img width="1919" height="1028" alt="Image" src="https://github.com/user-attachments/assets/59465be3-a16c-4387-a8cc-a12927acbed9" />
+<img width="1919" height="1028" alt="Image" src="https://github.com/user-attachments/assets/be6b376c-1e6c-46fe-a6e5-8bcd6e4487c9" />
 
 ---
 ## 🧰 Tech Stack
