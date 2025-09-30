@@ -13,8 +13,10 @@ mvn test -Dsurefire.suiteXmlFiles=testng.xml
 ```
 
 ---
+
 ## 📸 Screenshots
-![img.png](images/img.png)
+<img width="1919" height="1028" alt="Image" src="https://github.com/user-attachments/assets/59465be3-a16c-4387-a8cc-a12927acbed9" />
+
 ---
 ## 🧰 Tech Stack
 
@@ -76,9 +78,7 @@ mvn test -Dsurefire.suiteXmlFiles=testng.xml
 - Jenkinsfile for pipeline automation  
 
 ```
----
-## ⚙ Running via CI/CD
-![img_2.png](images/img_2.png)
+
 ---
 ## 📝 Basic Create Test
 
