@@ -13,7 +13,7 @@ public class TestCreateToken extends BaseTest {
 
     @Link("https://bugz.atlassian.net/browse/RBT-7")
     @Description("Verify that post request to the create token basically creates a 16-digit token. ")
-    @Owner("Pramod Dutta")
+    @Owner("Lipi")
     @Test(groups = "reg",priority = 1)
     public void test_verifyTokenPOST(){
 
@@ -37,7 +37,7 @@ public class TestCreateToken extends BaseTest {
 
     @Test(groups = "reg", priority = 1)
     @TmsLink("https://bugz.atlassian.net/browse/BUG-19")
-    @Owner("Promode")
+    @Owner("Lipi")
     @Description("TC#2  - Create Invalid Token and Verify")
     public void testTokenPOST_Negative() {
 

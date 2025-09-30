@@ -22,7 +22,7 @@ public class TestIntegrationFlow1 extends BaseTest {
     //  5. Delete the Booking - Need to get the token, bookingID from above request
 
     @Test(groups = "qa", priority = 1)
-    @Owner("Promode")
+    @Owner("Lipi")
     @Description("TC#INT1 - Step 1. Verify that the Booking can be Created")
     public void testCreateBooking(ITestContext iTestContext){
 
@@ -44,7 +44,7 @@ public class TestIntegrationFlow1 extends BaseTest {
     }
 
     @Test(groups = "qa", priority = 2)
-    @Owner("Promode")
+    @Owner("Lipi")
     @Description("TC#INT1 - Step 2. Verify that the Booking By ID")
     public void testVerifyBookingId(ITestContext iTestContext){
 
@@ -67,7 +67,7 @@ public class TestIntegrationFlow1 extends BaseTest {
     }
 
     @Test(groups = "qa", priority = 3)
-    @Owner("Promode")
+    @Owner("Lipi")
     @Description("TC#INT1 - Step 3. Verify Updated Booking by ID")
     public void testUpdateBookingByID(ITestContext iTestContext){
 
@@ -98,7 +98,7 @@ public class TestIntegrationFlow1 extends BaseTest {
     }
 
     @Test(groups = "qa", priority = 4)
-    @Owner("Promode")
+    @Owner("Lipi")
     @Description("TC#INT1 - Step 4. Delete the Booking by ID")
     public void testDeleteBookingById(ITestContext iTestContext){
 
